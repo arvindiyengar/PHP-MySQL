@@ -1,0 +1,2615 @@
+<!DOCTYPE html>
+<html>
+<head>
+        
+    <title>WAMP error: Forbidden You don&#39;t have permission to access /phpmyadmin/ on this server - Stack Overflow</title>
+    <link rel="shortcut icon" href="http://cdn.sstatic.net/stackoverflow/img/favicon.ico">
+    <link rel="apple-touch-icon image_src" href="http://cdn.sstatic.net/stackoverflow/img/apple-touch-icon.png">
+    <link rel="search" type="application/opensearchdescription+xml" title="Stack Overflow" href="/opensearch.xml">
+    
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://cdn.sstatic.net/js/stub.js?v=e9e6d9e79912"></script>
+    <link rel="stylesheet" type="text/css" href="http://cdn.sstatic.net/stackoverflow/all.css?v=c1abee6468cf">
+    
+    <meta name="relativepagescore" content="557914">
+    <link rel="canonical" href="http://stackoverflow.com/questions/8366976/wamp-error-forbidden-you-dont-have-permission-to-access-phpmyadmin-on-this-s">
+    <link rel="alternate" type="application/atom+xml" title="Feed for question 'WAMP error: Forbidden You don&#39;t have permission to access /phpmyadmin/ on this server'" href="/feeds/question/8366976">
+    <script type="text/javascript">
+        
+        StackExchange.ready(function () {
+            StackExchange.using("postValidation", function () {
+                StackExchange.postValidation.initOnBlurAndSubmit($('#post-form'), 2, 'answer');
+            });
+
+            
+            StackExchange.question.init({showAnswerHelp:true,totalCommentCount:2,shownCommentCount:2,highlightColor:'#F4A83D',backgroundColor:'#FFF',questionId:8366976});
+
+            styleCode();
+
+                StackExchange.realtime.subscribeToQuestion('1', '8366976');
+            
+                
+        });
+    </script>
+
+
+    <script type="text/javascript">
+        StackExchange.init({"stackAuthUrl":"https://stackauth.com","serverTime":1370535775,"styleCode":true,"enableUserHovercards":true,"site":{"name":"Stack Overflow","description":"Q&A for professional and enthusiast programmers","isNoticesTabEnabled":true,"recaptchaPublicKey":"6LdchgIAAAAAAJwGpIzRQSOFaO0pU6s44Xt8aTwc","enableSocialMediaInSharePopup":true},"user":{"fkey":"76b490ff73ec8226155e088b8d0270c2","isAnonymous":true}});
+        StackExchange.using.setCacheBreakers({"js/prettify-full.js":"6c261bebf56a","js/moderator.js":"f96f7e4ee5dc","js/full-anon.js":"0916c60ba5ef","js/full.js":"4890977376c7","js/wmd.js":"028571a2bde1","js/third-party/jquery.autocomplete.min.js":"e5f01e97f7c3","js/mobile.js":"6eb68240242f","js/help.js":"1745cc3d535a","js/tageditor.js":"450c9e8426fc","js/tageditornew.js":"b6c68ad4c7dd","js/inline-tag-editing.js":"8e84e8a137f7","js/revisions.js":"7273bb714bba","js/review.js":"56c3941a5bfc","js/tagsuggestions.js":"aa48ef6154df","js/post-validation.js":"4aec80fc0009","js/explore-qlist.js":"1c5bbd79b562"});
+        
+    </script>
+    <script type="text/javascript">
+        StackExchange.using("gps", function() {
+             StackExchange.gps.init(true);
+        });
+    </script>
+    
+        <script type="text/javascript">
+            StackExchange.ready(function () {
+                $('#nav-tour').click(function () {
+                    StackExchange.using("gps", function() {
+                        StackExchange.gps.track("aboutpage.click", { aboutclick_location: "headermain" }, true);
+                    });
+                });
+            });
+        </script>
+</head>
+<body class="question-page">
+    <noscript><div id="noscript-padding"></div></noscript>
+    <div id="notify-container"></div>
+    <div id="overlay-header"></div>
+    <div id="custom-header"></div>
+
+    <div class="container">
+        <div id="header" class=headeranon>
+            <div id="portalLink">
+                <a class="genu" href="http://stackexchange.com" onclick="StackExchange.ready(function(){genuwine.click();});return false;">Stack Exchange</a>
+            </div>
+            <div id="topbar">
+                <div id="hlinks">
+                    
+<span id="hlinks-user"></span>
+<span id="hlinks-nav">                        <a href="/users/login?returnurl=%2fquestions%2f8366976%2fwamp-error-forbidden-you-dont-have-permission-to-access-phpmyadmin-on-this-s">sign up</a>
+
+ <span class="lsep">|</span>
+                    <a href="/users/login?returnurl=%2fquestions%2f8366976%2fwamp-error-forbidden-you-dont-have-permission-to-access-phpmyadmin-on-this-s">log in</a>
+
+ <span class="lsep">|</span>
+                    <a href="http://careers.stackoverflow.com">careers 2.0</a>
+
+ <span class="lsep">|</span>
+</span>
+<span id="hlinks-custom"></span>
+                </div>
+                <div id="hsearch">
+                    <form id="search" action="/search" method="get" autocomplete="off">
+                        <div>
+                            <input autocomplete="off" name="q" class="textbox" placeholder="search" tabindex="1" type="text" maxlength="240" size="28" value="">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <br class="cbt">
+            <div id="hlogo">
+                <a href="/" >
+                    Stack Overflow
+                </a>
+            </div>
+            <div id="hmenus">
+                <div class="nav mainnavs mainnavsanon">
+                    <ul>
+                            <li class="youarehere"><a id="nav-questions" href="/questions">Questions</a></li>
+                            <li><a id="nav-tags" href="/tags">Tags</a></li>
+                            <li><a id="nav-tour" href="/about">Tour</a></li>
+                            <li><a id="nav-users" href="/users">Users</a></li>
+                    </ul>
+                </div>
+                <div class="nav askquestion">
+                    <ul>
+                        <li>
+                            <a id="nav-askquestion"  href="/questions/ask">Ask Question</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+
+
+
+        <div id="content">
+            
+
+<div itemscope itemtype="http://schema.org/Article">
+<link itemprop="image" href="http://cdn.sstatic.net/stackoverflow/img/apple-touch-icon.png">
+<!--googleoff: snippet-->
+<div id="herobox-mini">
+    <div id="hero-content">
+        <span id="controls">
+            <a href="/about" id="tell-me-more" class="button">Tell me more</a>
+            <span id="close"><a title="click to dismiss">&times;</a></span>
+        </span>
+        <div id="blurb">
+            <span id="site-name">Stack Overflow</span> is a question and answer site for 
+            professional and enthusiast programmers. It's 100% free, no registration required.
+        </div>        
+    </div>
+    <script>
+        $('#tell-me-more').click(function () {
+            var clickSource = $("body").attr("class") + '-mini';
+            if ($("body").hasClass("questions-page")) {
+                clickSource = 'questionpagemini';
+            }
+            if ($("body").hasClass("home-page")) {
+                clickSource = 'homepagemini';
+            }
+
+            StackExchange.using("gps", function () {
+                StackExchange.gps.track("aboutpage.click", { aboutclick_location: clickSource } , true);
+            });
+        });
+        $('#herobox-mini #close').click(function () {
+            StackExchange.using("gps", function () {
+                StackExchange.gps.track("hero.action", { hero_action_type: "close" }, true);
+            });
+            $.cookie("hero", "none", { path: "/" });
+            var $hero = $("#herobox-mini");
+            $hero.slideUp('fast', function () { $hero.remove(); });
+            return false;
+        });
+    </script>
+</div>
+<!--googleon: snippet-->
+<div id="question-header">
+    <h1 itemprop="name"><a href="/questions/8366976/wamp-error-forbidden-you-dont-have-permission-to-access-phpmyadmin-on-this-s" class="question-hyperlink">WAMP error: Forbidden You don&#39;t have permission to access /phpmyadmin/ on this server</a></h1>
+</div>
+<div id="mainbar">
+
+
+
+<div class="question" data-questionid="8366976"  id="question">
+    
+                <div class="everyonelovesstackoverflow" id="adzerk1">
+            </div>
+
+
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+    <input type="hidden" value="8366976">
+    <a class="vote-up-off" title="This question shows research effort; it is useful and clear">up vote</a>
+    <span class="vote-count-post ">107</span>
+    <a class="vote-down-off" title="This question does not show any research effort; it is unclear or not useful">down vote</a>
+    
+    <a class="star-off" href="#" title="This is a favorite question (click again to undo)">favorite</a>
+    <div class="favoritecount"><b>35</b></div>   
+
+</div>
+
+            </td>
+            
+<td class="postcell">
+<div>
+    <div class="post-text" itemprop="description">
+        <p>I am new to <a href="http://en.wikipedia.org/wiki/WAMP">WAMP</a> and I have just installed it today.</p>
+
+<p>The setup went well and localhost seems to work, but when I try to access <a href="http://en.wikipedia.org/wiki/PhpMyAdmin">phpMyAdmin</a> I get this error:</p>
+
+<blockquote>
+  <p>Forbidden<br/>
+  You don't have permission to access /phpmyadmin/ on this server.</p>
+</blockquote>
+
+<p>Why do I get this permission access error with phpMyAdmin? </p>
+
+<p>I am using Windows 7.</p>
+
+    </div>
+    <div class="post-taglist">
+        <a href="/questions/tagged/permissions" class="post-tag" title="show questions tagged 'permissions'" rel="tag">permissions</a> <a href="/questions/tagged/wamp" class="post-tag" title="show questions tagged 'wamp'" rel="tag">wamp</a> 
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+
+
+
+
+
+
+
+
+
+<div class="post-menu"><a href="/q/8366976" title="short permalink to this question" class="short-link" id="link-post-8366976">share</a><span class="lsep">|</span><a href="/posts/8366976/edit" class="suggest-edit-post" title="">improve this question</a></div>        
+    </td>
+    <td align="right" class="post-signature">
+
+
+    <div class="user-info user-hover">
+        <div class="user-action-time">
+                            <a href="/posts/8366976/revisions" title="show all edits to this post">edited <span title="2013-04-24 14:55:08Z" class="relativetime">Apr 24 at 14:55</span></a>
+
+        </div>
+        <div class="user-gravatar32">
+            <a href="/users/1228/will"><div class=""><img src="http://www.gravatar.com/avatar/3568876d79f0551ec5d77652eb8ae9ef?s=32&d=identicon&r=PG" alt="" width="32" height="32"></div></a>
+        </div>
+        <div class="user-details">
+            <a href="/users/1228/will">Will</a><span class="mod-flair" title="moderator">&#9830;</span><br>
+            <span class="reputation-score" title="reputation score 64756" dir="ltr">64.8k</span><span title="17 gold badges"><span class="badge1"></span><span class="badgecount">17</span></span><span title="146 silver badges"><span class="badge2"></span><span class="badgecount">146</span></span><span title="231 bronze badges"><span class="badge3"></span><span class="badgecount">231</span></span>
+        </div>
+    </div>
+    </td>
+    <td class="post-signature owner">
+        
+
+    <div class="user-info ">
+        <div class="user-action-time">
+                                    asked <span title="2011-12-03 10:15:21Z" class="relativetime">Dec 3 '11 at 10:15</span>
+        </div>
+        <div class="user-gravatar32">
+            <a href="/users/985482/nistor-alexandru"><div class=""><img src="http://www.gravatar.com/avatar/bc8d926bb23d80568915b40a982be6af?s=32&d=identicon&r=PG" alt="" width="32" height="32"></div></a>
+        </div>
+        <div class="user-details">
+            <a href="/users/985482/nistor-alexandru">Nistor Alexandru</a><br>
+            <span class="reputation-score" title="reputation score" dir="ltr">1,321</span><span title="2 gold badges"><span class="badge1"></span><span class="badgecount">2</span></span><span title="6 silver badges"><span class="badge2"></span><span class="badgecount">6</span></span><span title="18 bronze badges"><span class="badge3"></span><span class="badgecount">18</span></span>
+        </div>
+    </div>
+
+    </td>
+    </tr>
+    </table>
+</div>
+</td>
+        </tr>
+
+
+<tr>
+<td class="votecell"></td>
+<td>
+    <div id="comments-8366976" class="comments">
+        <table>
+        <tbody>
+                    
+    <tr id="comment-20541139" class="comment">
+        <td class="comment-actions"><table><tbody><tr>
+<td class="comment-score">
+<span title="number of 'useful comment' votes received" class="warm">9</span>
+</td>
+<td>
+&nbsp;
+</td></tr>
+</tbody></table></td>
+        <td class="comment-text"><div><span class="comment-copy">Be carefull with the accepted answer, WAMP&#39;s phpmyadmin is configured to allow root with no password by default. <code>Allow from all</code> would open the database to the public. The real problem is that WAMP is binding to an IPv6 address on your version of Windows. To fix just add <code>Allow from ::1</code> in <code>c:\wamp\alias\phpmyadmin.conf</code> <code>&lt;Directory &quot;c:&#47;wamp&#47;apps&#47;phpmyadmin3.4.5&#47;&quot;&gt;</code>.</span> &ndash;&nbsp;<a href="/users/584490/tiberiu-ionu-stan" title="1064 reputation" class="comment-user">Tiberiu-Ionuț Stan</a> <span class="comment-date" dir="ltr"><span title="2013-02-04 16:07:53Z" class="relativetime-clean">Feb 4 at 16:07</span></span><span class="edited-yes" title="this comment was edited 2 times"></span></div></td>
+    </tr>
+            
+    <tr id="comment-23255621" class="comment">
+        <td class="comment-actions"><table><tbody><tr>
+<td class="comment-score">
+<span title="number of 'useful comment' votes received" class="cool">1</span>
+</td>
+<td>
+&nbsp;
+</td></tr>
+</tbody></table></td>
+        <td class="comment-text"><div><span class="comment-copy">Strangely, this same question, give or take, is a <a href="http://stackoverflow.com/questions/10600795/wamp-server-error-forbidden-you-dont-have-permission-to-access-phpmyadmin-on">protected as a community wiki here</a></span> &ndash;&nbsp;<a href="/users/1028230/ruffin" title="870 reputation" class="comment-user">ruffin</a> <span class="comment-date" dir="ltr"><span title="2013-04-27 15:13:14Z" class="relativetime-clean">Apr 27 at 15:13</span></span></div></td>
+    </tr>
+
+        </tbody>
+    
+        </table>
+    </div>
+    
+</td>
+</tr>            </table>    
+</div>
+
+
+<div id="answers">
+
+    <a name="tab-top"></a>
+    <div id="answers-header">
+        <div class="subheader answers-subheader">
+            <h2>
+                    15 Answers
+            </h2>
+            <div id="tabs">
+                <a href="/questions/8366976/wamp-error-forbidden-you-dont-have-permission-to-access-phpmyadmin-on-this-s?answertab=active#tab-top" title="Answers with the latest activity first">active</a>
+<a href="/questions/8366976/wamp-error-forbidden-you-dont-have-permission-to-access-phpmyadmin-on-this-s?answertab=oldest#tab-top" title="Answers in the order they were provided">oldest</a>
+<a class="youarehere" href="/questions/8366976/wamp-error-forbidden-you-dont-have-permission-to-access-phpmyadmin-on-this-s?answertab=votes#tab-top" title="Answers with the highest score first">votes</a>
+
+            </div>
+        </div>    
+    </div>    
+
+
+
+
+  
+<a name="8367064"></a>
+<div id="answer-8367064" class="answer accepted-answer" data-answerid="8367064" >
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+    <input type="hidden" value="8367064">
+    <a class="vote-up-off" title="This answer is useful">up vote</a>
+    <span class="vote-count-post ">156</span>
+    <a class="vote-down-off" title="This answer is not useful">down vote</a>
+    
+
+            <span class="vote-accepted-on load-accepted-answer-date" title="loading when this answer was accepted...">accepted</span>
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text"><p>Change the file content of <code>c:\wamp\alias\phpmyadmin.conf</code> to the following.</p>
+
+<pre><code>&lt;Directory "c:/wamp/apps/phpmyadmin3.4.5/"&gt;
+    Options Indexes FollowSymLinks MultiViews
+    AllowOverride all
+        Order Deny,Allow
+        Allow from all
+&lt;/Directory&gt;
+</code></pre>
+
+<p>Here my WAMP installation is in the <code>c:\wamp</code> folder. Change it according to your installation.</p>
+
+<p>Previously, it was like this:</p>
+
+<pre><code>&lt;Directory "c:/wamp/apps/phpmyadmin3.4.5/"&gt;
+    Options Indexes FollowSymLinks MultiViews
+    AllowOverride all
+        Order Deny,Allow
+    Deny from all
+    Allow from 127.0.0.1
+&lt;/Directory&gt;
+</code></pre>
+
+<p>Restart your Apache server after making these changes.</p>
+</div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+
+
+
+
+
+
+
+
+
+<div class="post-menu"><a href="/a/8367064" title="short permalink to this answer" class="short-link" id="link-post-8367064">share</a><span class="lsep">|</span><a href="/posts/8367064/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+
+
+    <div class="user-info user-hover">
+        <div class="user-action-time">
+                            <a href="/posts/8367064/revisions" title="show all edits to this post">edited <span title="2012-11-29 09:01:45Z" class="relativetime">Nov 29 '12 at 9:01</span></a>
+
+        </div>
+        <div class="user-gravatar32">
+            <a href="/users/63550/peter-mortensen"><div class=""><img src="http://www.gravatar.com/avatar/78a0a4bb106d07b6c6f33a51988155e3?s=32&d=identicon&r=PG" alt="" width="32" height="32"></div></a>
+        </div>
+        <div class="user-details">
+            <a href="/users/63550/peter-mortensen">Peter Mortensen</a><br>
+            <span class="reputation-score" title="reputation score" dir="ltr">6,140</span><span title="7 gold badges"><span class="badge1"></span><span class="badgecount">7</span></span><span title="39 silver badges"><span class="badge2"></span><span class="badgecount">39</span></span><span title="70 bronze badges"><span class="badge3"></span><span class="badgecount">70</span></span>
+        </div>
+    </div>
+    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    
+
+    <div class="user-info ">
+        <div class="user-action-time">
+                                        answered <span title="2011-12-03 10:32:17Z" class="relativetime">Dec 3 '11 at 10:32</span>
+        </div>
+        <div class="user-gravatar32">
+            <a href="/users/1039481/akhil-thayyil"><div class=""><img src="http://www.gravatar.com/avatar/a10ec3de7bec751e1633eba0ef28d4cb?s=32&d=identicon&r=PG" alt="" width="32" height="32"></div></a>
+        </div>
+        <div class="user-details">
+            <a href="/users/1039481/akhil-thayyil">Akhil Thayyil</a><br>
+            <span class="reputation-score" title="reputation score" dir="ltr">3,503</span><span title="1 gold badge"><span class="badge1"></span><span class="badgecount">1</span></span><span title="9 silver badges"><span class="badge2"></span><span class="badgecount">9</span></span><span title="18 bronze badges"><span class="badge3"></span><span class="badgecount">18</span></span>
+        </div>
+    </div>
+
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+
+
+
+<tr>
+<td class="votecell"></td>
+<td>
+    <div id="comments-8367064" class="comments">
+        <table>
+        <tbody>
+                    
+    <tr id="comment-10323600" class="comment">
+        <td class="comment-actions"><table><tbody><tr>
+<td class="comment-score">
+<span title="number of 'useful comment' votes received" class="cool">1</span>
+</td>
+<td>
+&nbsp;
+</td></tr>
+</tbody></table></td>
+        <td class="comment-text"><div><span class="comment-copy">Previously this will be 
+Deny from all
+Allow from 127.0.0.1
+
+Also restart your apache server service after modifying</span> &ndash;&nbsp;<a href="/users/1039481/akhil-thayyil" title="3503 reputation" class="comment-user">Akhil Thayyil</a> <span class="comment-date" dir="ltr"><span title="2011-12-03 10:33:30Z" class="relativetime-clean">Dec 3 '11 at 10:33</span></span></div></td>
+    </tr>
+            
+    <tr id="comment-10323658" class="comment">
+        <td></td>
+        <td class="comment-text"><div><span class="comment-copy">Thank you that worked</span> &ndash;&nbsp;<a href="/users/985482/nistor-alexandru" title="1321 reputation" class="comment-user owner">Nistor Alexandru</a> <span class="comment-date" dir="ltr"><span title="2011-12-03 10:42:50Z" class="relativetime-clean">Dec 3 '11 at 10:42</span></span></div></td>
+    </tr>
+            
+    <tr id="comment-18802461" class="comment">
+        <td class="comment-actions"><table><tbody><tr>
+<td class="comment-score">
+<span title="number of 'useful comment' votes received" class="cool">2</span>
+</td>
+<td>
+&nbsp;
+</td></tr>
+</tbody></table></td>
+        <td class="comment-text"><div><span class="comment-copy">depends on your apache version. apache &gt; 2.4.x, you need a different config.  see my answer below</span> &ndash;&nbsp;<a href="/users/377856/emile" title="2233 reputation" class="comment-user">Emile</a> <span class="comment-date" dir="ltr"><span title="2012-12-03 23:39:58Z" class="relativetime-clean">Dec 3 '12 at 23:39</span></span></div></td>
+    </tr>
+            
+    <tr id="comment-20521655" class="comment">
+        <td class="comment-actions"><table><tbody><tr>
+<td class="comment-score">
+<span title="number of 'useful comment' votes received" class="cool">1</span>
+</td>
+<td>
+&nbsp;
+</td></tr>
+</tbody></table></td>
+        <td class="comment-text"><div><span class="comment-copy">WAMP&#39;s phpmyadmin is configured to allow root with no password. <code>Allow from all</code> would open the database to the public.</span> &ndash;&nbsp;<a href="/users/584490/tiberiu-ionu-stan" title="1064 reputation" class="comment-user">Tiberiu-Ionuț Stan</a> <span class="comment-date" dir="ltr"><span title="2013-02-04 00:50:03Z" class="relativetime-clean">Feb 4 at 0:50</span></span></div></td>
+    </tr>
+            
+    <tr id="comment-20521690" class="comment">
+        <td class="comment-actions"><table><tbody><tr>
+<td class="comment-score">
+<span title="number of 'useful comment' votes received" class="warm">7</span>
+</td>
+<td>
+&nbsp;
+</td></tr>
+</tbody></table></td>
+        <td class="comment-text"><div><span class="comment-copy">The real problem is that wamp is binding to an IPv6 address. The fix: just add <code>Allow from ::1</code></span> &ndash;&nbsp;<a href="/users/584490/tiberiu-ionu-stan" title="1064 reputation" class="comment-user">Tiberiu-Ionuț Stan</a> <span class="comment-date" dir="ltr"><span title="2013-02-04 00:52:43Z" class="relativetime-clean">Feb 4 at 0:52</span></span></div></td>
+    </tr>
+
+        </tbody>
+    
+        </table>
+    </div>
+    <a id="comments-link-8367064" class="comments-link" data-comments-count="5" title="expand to show all comments on this post">show <b>5</b> more comments</a>
+</td>
+</tr>
+    </table>
+</div>
+            <div class="everyonelovesstackoverflow" id="adzerk3">
+            </div>
+
+
+
+  
+<a name="9579527"></a>
+<div id="answer-9579527" class="answer" data-answerid="9579527" >
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+    <input type="hidden" value="9579527">
+    <a class="vote-up-off" title="This answer is useful">up vote</a>
+    <span class="vote-count-post ">57</span>
+    <a class="vote-down-off" title="This answer is not useful">down vote</a>
+    
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text"><p>You have to just check whether your WAMP server is online or not.</p>
+
+<p>To put your wamp server online follow this steps.</p>
+
+<ol>
+<li>Go to your wamp server notification icon (at task bar).</li>
+<li>Single click on the WAMP server icon.</li>
+<li>Select last option from the menu i.e. <strong>Put Online</strong></li>
+<li>Your server will restart automatically (in latest versions only) other wise you have to restart your server manually .</li>
+</ol>
+
+<p>And you are DONE..</p>
+</div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+
+
+
+
+
+
+
+
+
+<div class="post-menu"><a href="/a/9579527" title="short permalink to this answer" class="short-link" id="link-post-9579527">share</a><span class="lsep">|</span><a href="/posts/9579527/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+
+
+    <div class="user-info user-hover">
+        <div class="user-action-time">
+                            <a href="/posts/9579527/revisions" title="show all edits to this post">edited <span title="2012-03-25 08:10:32Z" class="relativetime">Mar 25 '12 at 8:10</span></a>
+
+        </div>
+        <div class="user-gravatar32">
+            <a href="/users/298479/thiefmaster"><div class="gravatar-wrapper-32"><img src="http://www.gravatar.com/avatar/bc66db28aa7c3fa8e4ce4238b696dee9?s=128&d=identicon&r=PG" alt=""></div></a>
+        </div>
+        <div class="user-details">
+            <a href="/users/298479/thiefmaster">ThiefMaster</a><span class="mod-flair" title="moderator">&#9830;</span><br>
+            <span class="reputation-score" title="reputation score 104726" dir="ltr">105k</span><span title="16 gold badges"><span class="badge1"></span><span class="badgecount">16</span></span><span title="120 silver badges"><span class="badge2"></span><span class="badgecount">120</span></span><span title="203 bronze badges"><span class="badge3"></span><span class="badgecount">203</span></span>
+        </div>
+    </div>
+    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    
+
+    <div class="user-info ">
+        <div class="user-action-time">
+                                        answered <span title="2012-03-06 07:26:01Z" class="relativetime">Mar 6 '12 at 7:26</span>
+        </div>
+        <div class="user-gravatar32">
+            <a href="/users/1097944/mehul"><div class=""><img src="http://www.gravatar.com/avatar/471fec003744f576730742c08a4ebd15?s=32&d=identicon&r=PG" alt="" width="32" height="32"></div></a>
+        </div>
+        <div class="user-details">
+            <a href="/users/1097944/mehul">Mehul</a><br>
+            <span class="reputation-score" title="reputation score" dir="ltr">636</span><span title="3 silver badges"><span class="badge2"></span><span class="badgecount">3</span></span><span title="2 bronze badges"><span class="badge3"></span><span class="badgecount">2</span></span>
+        </div>
+    </div>
+
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+
+
+
+<tr>
+<td class="votecell"></td>
+<td>
+    <div id="comments-9579527" class="comments">
+        <table>
+        <tbody>
+                    
+    <tr id="comment-14543583" class="comment">
+        <td class="comment-actions"><table><tbody><tr>
+<td class="comment-score">
+<span title="number of 'useful comment' votes received" class="cool">4</span>
+</td>
+<td>
+&nbsp;
+</td></tr>
+</tbody></table></td>
+        <td class="comment-text"><div><span class="comment-copy">This is worked for me :)</span> &ndash;&nbsp;<a href="/users/441343/rauf" title="1550 reputation" class="comment-user">Rauf</a> <span class="comment-date" dir="ltr"><span title="2012-06-19 15:21:24Z" class="relativetime-clean">Jun 19 '12 at 15:21</span></span></div></td>
+    </tr>
+            
+    <tr id="comment-19522500" class="comment">
+        <td class="comment-actions"><table><tbody><tr>
+<td class="comment-score">
+<span title="number of 'useful comment' votes received" class="cool">1</span>
+</td>
+<td>
+&nbsp;
+</td></tr>
+</tbody></table></td>
+        <td class="comment-text"><div><span class="comment-copy">If the issue is after a fresh install, this will solve it.</span> &ndash;&nbsp;<a href="/users/1249924/s-rahul-bose" title="61 reputation" class="comment-user">S Rahul Bose</a> <span class="comment-date" dir="ltr"><span title="2013-01-01 07:23:25Z" class="relativetime-clean">Jan 1 at 7:23</span></span></div></td>
+    </tr>
+            
+    <tr id="comment-21253278" class="comment">
+        <td></td>
+        <td class="comment-text"><div><span class="comment-copy">Thanks, it&#39;s worked for me...</span> &ndash;&nbsp;<a href="/users/1806004/ebin-sebastian" title="225 reputation" class="comment-user">Ebin Sebastian</a> <span class="comment-date" dir="ltr"><span title="2013-02-27 06:38:17Z" class="relativetime-clean">Feb 27 at 6:38</span></span></div></td>
+    </tr>
+            
+    <tr id="comment-22039198" class="comment">
+        <td class="comment-actions"><table><tbody><tr>
+<td class="comment-score">
+<span title="number of 'useful comment' votes received" class="cool">1</span>
+</td>
+<td>
+&nbsp;
+</td></tr>
+</tbody></table></td>
+        <td class="comment-text"><div><span class="comment-copy">&quot;latest versions only&quot; will get outdated quickly. You ARE in the IT world, so please mention a version number. Plus this didn&#39;t work for me at all. Always have it online, running it as admin. Worse, have some domains working using virtual hosts but cant even access localhost or 127.0.0.1, or either with */phpmyadmin :s Stupidly strange. This is on Win8 btw. May have something to do with Visual Studio 2012 Ultimate 64bit edition also installed (which includes IIS 8, will update)</span> &ndash;&nbsp;<a href="/users/1155833/nukeface" title="159 reputation" class="comment-user">Nukeface</a> <span class="comment-date" dir="ltr"><span title="2013-03-21 16:07:11Z" class="relativetime-clean">Mar 21 at 16:07</span></span><span class="edited-yes" title="this comment was edited"></span></div></td>
+    </tr>
+            
+    <tr id="comment-23279028" class="comment">
+        <td></td>
+        <td class="comment-text"><div><span class="comment-copy">This has wicked for me! Thank thy.</span> &ndash;&nbsp;<a href="/users/1545072/yekhezkel-yovel" title="190 reputation" class="comment-user">Yekhezkel Yovel</a> <span class="comment-date" dir="ltr"><span title="2013-04-28 20:23:14Z" class="relativetime-clean">Apr 28 at 20:23</span></span></div></td>
+    </tr>
+
+        </tbody>
+    
+        </table>
+    </div>
+    <a id="comments-link-9579527" class="comments-link" data-comments-count="1" title="expand to show all comments on this post">show <b>1</b> more comment</a>
+</td>
+</tr>
+    </table>
+</div>
+
+  
+<a name="11110334"></a>
+<div id="answer-11110334" class="answer" data-answerid="11110334" >
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+    <input type="hidden" value="11110334">
+    <a class="vote-up-off" title="This answer is useful">up vote</a>
+    <span class="vote-count-post ">27</span>
+    <a class="vote-down-off" title="This answer is not useful">down vote</a>
+    
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text"><p>If you're using WAMP with Apache 2.4.2 or greater, you need to use <code>Require all</code> instead of <code>Allow</code> and remove <code>Order Deny,Allow</code>:</p>
+
+<pre><code>&lt;Directory "f:/Projects/myproject/www/"&gt;
+    Options Indexes FollowSymLinks MultiViews
+    AllowOverride all
+    Require all granted
+&lt;/Directory&gt;
+</code></pre>
+
+<p>*as stated in this <a href="http://www.andrejfarkas.com/2012/06/fun-with-wamp-server-and-apache-2-4-2/">blog post</a></p>
+</div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+
+
+
+
+
+
+
+
+
+<div class="post-menu"><a href="/a/11110334" title="short permalink to this answer" class="short-link" id="link-post-11110334">share</a><span class="lsep">|</span><a href="/posts/11110334/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+
+
+    <div class="user-info ">
+        <div class="user-action-time">
+                            <a href="/posts/11110334/revisions" title="show all edits to this post">edited <span title="2013-01-27 22:15:09Z" class="relativetime">Jan 27 at 22:15</span></a>
+
+        </div>
+        <div class="user-gravatar32">
+            
+        </div>
+        <div class="user-details">
+            <br>
+            
+        </div>
+    </div>
+    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    
+
+    <div class="user-info user-hover">
+        <div class="user-action-time">
+                                        answered <span title="2012-06-19 22:21:30Z" class="relativetime">Jun 19 '12 at 22:21</span>
+        </div>
+        <div class="user-gravatar32">
+            <a href="/users/377856/emile"><div class=""><img src="http://www.gravatar.com/avatar/71bab4ef80c1483e15c5600869a91633?s=32&d=identicon&r=PG" alt="" width="32" height="32"></div></a>
+        </div>
+        <div class="user-details">
+            <a href="/users/377856/emile">Emile</a><br>
+            <span class="reputation-score" title="reputation score" dir="ltr">2,233</span><span title="4 gold badges"><span class="badge1"></span><span class="badgecount">4</span></span><span title="25 silver badges"><span class="badge2"></span><span class="badgecount">25</span></span><span title="53 bronze badges"><span class="badge3"></span><span class="badgecount">53</span></span>
+        </div>
+    </div>
+
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+
+
+
+<tr>
+<td class="votecell"></td>
+<td>
+    <div id="comments-11110334" class="comments">
+        <table>
+        <tbody>
+                    
+    <tr id="comment-15327490" class="comment">
+        <td></td>
+        <td class="comment-text"><div><span class="comment-copy">Thanks, this worked for me!</span> &ndash;&nbsp;<a href="/users/268581/dharmatech" title="1709 reputation" class="comment-user">dharmatech</a> <span class="comment-date" dir="ltr"><span title="2012-07-20 17:00:24Z" class="relativetime-clean">Jul 20 '12 at 17:00</span></span></div></td>
+    </tr>
+            
+    <tr id="comment-16201673" class="comment">
+        <td></td>
+        <td class="comment-text"><div><span class="comment-copy">Thanks, the answer didn&#39;t work for me, but this comment did.</span> &ndash;&nbsp;<a href="/users/140811/scott" title="1762 reputation" class="comment-user">Scott</a> <span class="comment-date" dir="ltr"><span title="2012-08-24 22:57:22Z" class="relativetime-clean">Aug 24 '12 at 22:57</span></span></div></td>
+    </tr>
+            
+    <tr id="comment-17873061" class="comment">
+        <td></td>
+        <td class="comment-text"><div><span class="comment-copy">Worked for me, thanks.</span> &ndash;&nbsp;<a href="/users/229205/imikay" title="147 reputation" class="comment-user">imikay</a> <span class="comment-date" dir="ltr"><span title="2012-10-30 14:11:19Z" class="relativetime-clean">Oct 30 '12 at 14:11</span></span></div></td>
+    </tr>
+            
+    <tr id="comment-18780548" class="comment">
+        <td></td>
+        <td class="comment-text"><div><span class="comment-copy">this answer worked fine with me</span> &ndash;&nbsp;<a href="/users/868103/osos" title="409 reputation" class="comment-user">osos</a> <span class="comment-date" dir="ltr"><span title="2012-12-03 09:48:02Z" class="relativetime-clean">Dec 3 '12 at 9:48</span></span></div></td>
+    </tr>
+            
+    <tr id="comment-19887948" class="comment">
+        <td></td>
+        <td class="comment-text"><div><span class="comment-copy">Forbidden
+
+You don&#39;t have permission to access /phpmyadmin/ on this server.</span> &ndash;&nbsp;<a href="/users/1094741/hassan-z" title="100 reputation" class="comment-user">Hassan Z</a> <span class="comment-date" dir="ltr"><span title="2013-01-14 07:20:08Z" class="relativetime-clean">Jan 14 at 7:20</span></span></div></td>
+    </tr>
+
+        </tbody>
+    
+        </table>
+    </div>
+    <a id="comments-link-11110334" class="comments-link" data-comments-count="3" title="expand to show all comments on this post">show <b>3</b> more comments</a>
+</td>
+</tr>
+    </table>
+</div>
+
+  
+<a name="10395282"></a>
+<div id="answer-10395282" class="answer" data-answerid="10395282" >
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+    <input type="hidden" value="10395282">
+    <a class="vote-up-off" title="This answer is useful">up vote</a>
+    <span class="vote-count-post ">18</span>
+    <a class="vote-down-off" title="This answer is not useful">down vote</a>
+    
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text"><p>Just use 127.0.0.1 instead of localhost (no changes to the configuration file are required).</p>
+
+<p>System:</p>
+
+<ul>
+<li>Windows 7</li>
+<li>wampserver2.2d-x64</li>
+</ul>
+
+<p>This works:</p>
+
+<pre><code>http://127.0.0.1/phpmyadmin/
+</code></pre>
+
+<p>This one fails:</p>
+
+<pre><code>http://localhost/phpmyadmin/
+</code></pre>
+</div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+
+
+
+
+
+
+
+
+
+<div class="post-menu"><a href="/a/10395282" title="short permalink to this answer" class="short-link" id="link-post-10395282">share</a><span class="lsep">|</span><a href="/posts/10395282/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+
+
+    <div class="user-info user-hover">
+        <div class="user-action-time">
+                            <a href="/posts/10395282/revisions" title="show all edits to this post">edited <span title="2012-11-29 09:04:25Z" class="relativetime">Nov 29 '12 at 9:04</span></a>
+
+        </div>
+        <div class="user-gravatar32">
+            <a href="/users/63550/peter-mortensen"><div class=""><img src="http://www.gravatar.com/avatar/78a0a4bb106d07b6c6f33a51988155e3?s=32&d=identicon&r=PG" alt="" width="32" height="32"></div></a>
+        </div>
+        <div class="user-details">
+            <a href="/users/63550/peter-mortensen">Peter Mortensen</a><br>
+            <span class="reputation-score" title="reputation score" dir="ltr">6,140</span><span title="7 gold badges"><span class="badge1"></span><span class="badgecount">7</span></span><span title="39 silver badges"><span class="badge2"></span><span class="badgecount">39</span></span><span title="70 bronze badges"><span class="badge3"></span><span class="badgecount">70</span></span>
+        </div>
+    </div>
+    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    
+
+    <div class="user-info ">
+        <div class="user-action-time">
+                                        answered <span title="2012-05-01 08:23:47Z" class="relativetime">May 1 '12 at 8:23</span>
+        </div>
+        <div class="user-gravatar32">
+            <a href="/users/1008017/mudx"><div class=""><img src="http://www.gravatar.com/avatar/e72a3c6bb1f53718a200dd82e7f4ae7b?s=32&d=identicon&r=PG" alt="" width="32" height="32"></div></a>
+        </div>
+        <div class="user-details">
+            <a href="/users/1008017/mudx">Mudx</a><br>
+            <span class="reputation-score" title="reputation score" dir="ltr">229</span><span title="2 silver badges"><span class="badge2"></span><span class="badgecount">2</span></span><span title="4 bronze badges"><span class="badge3"></span><span class="badgecount">4</span></span>
+        </div>
+    </div>
+
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+
+
+
+<tr>
+<td class="votecell"></td>
+<td>
+    <div id="comments-10395282" class="comments">
+        <table>
+        <tbody>
+                    
+    <tr id="comment-18831669" class="comment">
+        <td class="comment-actions"><table><tbody><tr>
+<td class="comment-score">
+<span title="number of 'useful comment' votes received" class="cool">1</span>
+</td>
+<td>
+&nbsp;
+</td></tr>
+</tbody></table></td>
+        <td class="comment-text"><div><span class="comment-copy">The why is because localhost is resolved as an IPv6 address, whereas wamp default config only allows the IPv4 loopback address.</span> &ndash;&nbsp;<a href="/users/1478467/sherbrow" title="6940 reputation" class="comment-user">Sherbrow</a> <span class="comment-date" dir="ltr"><span title="2012-12-04 20:29:16Z" class="relativetime-clean">Dec 4 '12 at 20:29</span></span></div></td>
+    </tr>
+            
+    <tr id="comment-19887936" class="comment">
+        <td></td>
+        <td class="comment-text"><div><span class="comment-copy">nvm.. posted at wrong placce. Sorry</span> &ndash;&nbsp;<a href="/users/1094741/hassan-z" title="100 reputation" class="comment-user">Hassan Z</a> <span class="comment-date" dir="ltr"><span title="2013-01-14 07:19:27Z" class="relativetime-clean">Jan 14 at 7:19</span></span><span class="edited-yes" title="this comment was edited"></span></div></td>
+    </tr>
+
+        </tbody>
+    
+        </table>
+    </div>
+    
+</td>
+</tr>
+    </table>
+</div>
+
+  
+<a name="11041850"></a>
+<div id="answer-11041850" class="answer" data-answerid="11041850" >
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+    <input type="hidden" value="11041850">
+    <a class="vote-up-off" title="This answer is useful">up vote</a>
+    <span class="vote-count-post ">16</span>
+    <a class="vote-down-off" title="This answer is not useful">down vote</a>
+    
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text"><p>I just had the same problem. It turns out that my windows is using the IPv6 address ::1 instead of 127.0.0.1. To solve this, I opened httpd.conf and changed the following line:</p>
+
+<p>Allow from 127.0.0.1</p>
+
+<p>to:</p>
+
+<p>Allow from 127.0.0.1 ::1</p>
+
+<p>Now I can access the server through localhost. Whatever you do, don't remove the Deny from all from the line above, or anyone on your network can gain access to your web server (unless that's what you want of course).</p>
+</div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+
+
+
+
+
+
+
+
+
+<div class="post-menu"><a href="/a/11041850" title="short permalink to this answer" class="short-link" id="link-post-11041850">share</a><span class="lsep">|</span><a href="/posts/11041850/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    
+
+    <div class="user-info ">
+        <div class="user-action-time">
+                                        answered <span title="2012-06-14 21:50:10Z" class="relativetime">Jun 14 '12 at 21:50</span>
+        </div>
+        <div class="user-gravatar32">
+            <a href="/users/1386737/micke"><div class=""><img src="http://www.gravatar.com/avatar/a0059bfc71c0cfc793a5f4f4ce0e9d98?s=32&d=identicon&r=PG" alt="" width="32" height="32"></div></a>
+        </div>
+        <div class="user-details">
+            <a href="/users/1386737/micke">Micke</a><br>
+            <span class="reputation-score" title="reputation score" dir="ltr">191</span><span title="1 silver badge"><span class="badge2"></span><span class="badgecount">1</span></span><span title="4 bronze badges"><span class="badge3"></span><span class="badgecount">4</span></span>
+        </div>
+    </div>
+
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+
+
+
+<tr>
+<td class="votecell"></td>
+<td>
+    <div id="comments-11041850" class="comments">
+        <table>
+        <tbody>
+                    
+    <tr id="comment-14442112" class="comment">
+        <td></td>
+        <td class="comment-text"><div><span class="comment-copy">I also had to make that change to all the aliases, by the way. To edit aliases, go to: &quot;[wamp icon]-&gt;Apache-&gt;Alias directories-&gt;[alias-url]-&gt;edit alias&quot;</span> &ndash;&nbsp;<a href="/users/1386737/micke" title="191 reputation" class="comment-user">Micke</a> <span class="comment-date" dir="ltr"><span title="2012-06-14 22:00:29Z" class="relativetime-clean">Jun 14 '12 at 22:00</span></span></div></td>
+    </tr>
+            
+    <tr id="comment-20564099" class="comment">
+        <td class="comment-actions"><table><tbody><tr>
+<td class="comment-score">
+<span title="number of 'useful comment' votes received" class="cool">4</span>
+</td>
+<td>
+&nbsp;
+</td></tr>
+</tbody></table></td>
+        <td class="comment-text"><div><span class="comment-copy">This should be the accepted answer.</span> &ndash;&nbsp;<a href="/users/584490/tiberiu-ionu-stan" title="1064 reputation" class="comment-user">Tiberiu-Ionuț Stan</a> <span class="comment-date" dir="ltr"><span title="2013-02-05 09:24:01Z" class="relativetime-clean">Feb 5 at 9:24</span></span></div></td>
+    </tr>
+            
+    <tr id="comment-21898091" class="comment">
+        <td></td>
+        <td class="comment-text"><div><span class="comment-copy">I executed <code>ping localhost</code> on my cmd terminal and got <code>Reply from ::1: time&lt;1ms</code>. It seems my Win7 machine is resolving localhost with an IPv6 address. Your solution did the trick. I agree, this should probably be the accepted answer.</span> &ndash;&nbsp;<a href="/users/349169/chris" title="517 reputation" class="comment-user">Chris</a> <span class="comment-date" dir="ltr"><span title="2013-03-18 09:04:28Z" class="relativetime-clean">Mar 18 at 9:04</span></span><span class="edited-yes" title="this comment was edited"></span></div></td>
+    </tr>
+
+        </tbody>
+    
+        </table>
+    </div>
+    
+</td>
+</tr>
+    </table>
+</div>
+
+  
+<a name="13981168"></a>
+<div id="answer-13981168" class="answer" data-answerid="13981168" >
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+    <input type="hidden" value="13981168">
+    <a class="vote-up-off" title="This answer is useful">up vote</a>
+    <span class="vote-count-post ">9</span>
+    <a class="vote-down-off" title="This answer is not useful">down vote</a>
+    
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text"><p>If you are on Windows 7 or 8 then Apache might be seeing the connections coming from "::1" which is the IPv6 equivalent of 127.0.0.1.</p>
+
+<p>You can check this by looking in the Apache Access Log (reachable from the WAMP menu)</p>
+
+<pre><code>::1 - - [20/Dec/2012:21:35:04 +0000] "GET /phpmyadmin/ HTTP/1.1" 403 213
+</code></pre>
+
+<p>The ::1 at the start is the clients address. The 403 at the end is the Access Denied code.</p>
+
+<p>The answers above will remove all restrictions and open phpmyadmin to all, but if you still want to restrict phpmyadmin to your machine only (generally a good idea) then under the line...</p>
+
+<pre><code>Allow from 127.0.0.1
+</code></pre>
+
+<p>..add the following:</p>
+
+<pre><code>Allow from ::1
+</code></pre>
+
+<p>(edit: Added suggestion from Nukeface)</p>
+</div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+
+
+
+
+
+
+
+
+
+<div class="post-menu"><a href="/a/13981168" title="short permalink to this answer" class="short-link" id="link-post-13981168">share</a><span class="lsep">|</span><a href="/posts/13981168/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+
+
+    <div class="user-info ">
+        <div class="user-action-time">
+                            <a href="/posts/13981168/revisions" title="show all edits to this post">edited <span title="2013-03-19 15:59:46Z" class="relativetime">Mar 19 at 15:59</span></a>
+
+        </div>
+        <div class="user-gravatar32">
+            
+        </div>
+        <div class="user-details">
+            <br>
+            
+        </div>
+    </div>
+    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    
+
+    <div class="user-info ">
+        <div class="user-action-time">
+                                        answered <span title="2012-12-20 21:56:33Z" class="relativetime">Dec 20 '12 at 21:56</span>
+        </div>
+        <div class="user-gravatar32">
+            <a href="/users/1380906/matalo"><div class=""><img src="http://www.gravatar.com/avatar/1b008f65d0d99c3216451f24a13b8506?s=32&d=identicon&r=PG" alt="" width="32" height="32"></div></a>
+        </div>
+        <div class="user-details">
+            <a href="/users/1380906/matalo">matalo</a><br>
+            <span class="reputation-score" title="reputation score" dir="ltr">101</span><span title="1 silver badge"><span class="badge2"></span><span class="badgecount">1</span></span><span title="5 bronze badges"><span class="badge3"></span><span class="badgecount">5</span></span>
+        </div>
+    </div>
+
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+
+
+
+<tr>
+<td class="votecell"></td>
+<td>
+    <div id="comments-13981168" class="comments">
+        <table>
+        <tbody>
+                    
+    <tr id="comment-19538752" class="comment">
+        <td class="comment-actions"><table><tbody><tr>
+<td class="comment-score">
+<span title="number of 'useful comment' votes received" class="cool">1</span>
+</td>
+<td>
+&nbsp;
+</td></tr>
+</tbody></table></td>
+        <td class="comment-text"><div><span class="comment-copy">Thank you. This should be the top comment. You explain the problem, solve it, and don&#39;t introduce a massive security vulnerability to someone&#39;s server.</span> &ndash;&nbsp;<a href="/users/728345/obesechicken13" title="85 reputation" class="comment-user">obesechicken13</a> <span class="comment-date" dir="ltr"><span title="2013-01-02 05:21:07Z" class="relativetime-clean">Jan 2 at 5:21</span></span></div></td>
+    </tr>
+            
+    <tr id="comment-21151531" class="comment">
+        <td></td>
+        <td class="comment-text"><div><span class="comment-copy">Worked for me, thanks.</span> &ndash;&nbsp;<a href="/users/369365/mit-akkaya" title="341 reputation" class="comment-user">&#220;mit AKKAYA</a> <span class="comment-date" dir="ltr"><span title="2013-02-23 23:39:19Z" class="relativetime-clean">Feb 23 at 23:39</span></span></div></td>
+    </tr>
+            
+    <tr id="comment-21219852" class="comment">
+        <td class="comment-actions"><table><tbody><tr>
+<td class="comment-score">
+<span title="number of 'useful comment' votes received" class="cool">1</span>
+</td>
+<td>
+&nbsp;
+</td></tr>
+</tbody></table></td>
+        <td class="comment-text"><div><span class="comment-copy">I&#39;ve got the solution as a separate and additional line. I use &quot;<code>Allow from 127.0.0.1</code> next line <code>Allow from ::1</code>&quot;. Just in case it switches back to IPv4 (because say me disabling IPv6)</span> &ndash;&nbsp;<a href="/users/1155833/nukeface" title="159 reputation" class="comment-user">Nukeface</a> <span class="comment-date" dir="ltr"><span title="2013-02-26 10:23:35Z" class="relativetime-clean">Feb 26 at 10:23</span></span><span class="edited-yes" title="this comment was edited"></span></div></td>
+    </tr>
+            
+    <tr id="comment-23745918" class="comment">
+        <td></td>
+        <td class="comment-text"><div><span class="comment-copy">+1 cheers.. Thanks.</span> &ndash;&nbsp;<a href="/users/1323519/imanan" title="1347 reputation" class="comment-user">iManan</a> <span class="comment-date" dir="ltr"><span title="2013-05-14 03:21:57Z" class="relativetime-clean">May 14 at 3:21</span></span></div></td>
+    </tr>
+
+        </tbody>
+    
+        </table>
+    </div>
+    
+</td>
+</tr>
+    </table>
+</div>
+
+  
+<a name="10091239"></a>
+<div id="answer-10091239" class="answer" data-answerid="10091239" >
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+    <input type="hidden" value="10091239">
+    <a class="vote-up-off" title="This answer is useful">up vote</a>
+    <span class="vote-count-post ">4</span>
+    <a class="vote-down-off" title="This answer is not useful">down vote</a>
+    
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text"><p>I found that using localhost would not work properly to allow local access from the server.  I had to use 127.0.0.1.</p>
+
+<p>In phpmyadmin.conf this did not work:</p>
+
+<pre><code>Deny from all
+Allow from localhost
+</code></pre>
+
+<p>this did work:</p>
+
+<pre><code>Deny from all
+Allow from 127.0.0.1
+</code></pre>
+
+<p>I am using WampServer Version 2.2</p>
+</div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+
+
+
+
+
+
+
+
+
+<div class="post-menu"><a href="/a/10091239" title="short permalink to this answer" class="short-link" id="link-post-10091239">share</a><span class="lsep">|</span><a href="/posts/10091239/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    
+
+    <div class="user-info user-hover">
+        <div class="user-action-time">
+                                        answered <span title="2012-04-10 15:03:55Z" class="relativetime">Apr 10 '12 at 15:03</span>
+        </div>
+        <div class="user-gravatar32">
+            <a href="/users/945157/jamestheprogrammer"><div class=""><img src="http://www.gravatar.com/avatar/eabe0264e23e4cfa480c17688749919f?s=32&d=identicon&r=PG" alt="" width="32" height="32"></div></a>
+        </div>
+        <div class="user-details">
+            <a href="/users/945157/jamestheprogrammer">jamesTheProgrammer</a><br>
+            <span class="reputation-score" title="reputation score" dir="ltr">1,065</span><span title="1 silver badge"><span class="badge2"></span><span class="badgecount">1</span></span><span title="15 bronze badges"><span class="badge3"></span><span class="badgecount">15</span></span>
+        </div>
+    </div>
+
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+
+
+
+<tr>
+<td class="votecell"></td>
+<td>
+    <div id="comments-10091239" class="comments dno">
+        <table>
+        <tbody>
+        
+            <tr><td></td><td></td></tr>
+        
+        </tbody>
+    
+        </table>
+    </div>
+    
+</td>
+</tr>
+    </table>
+</div>
+
+  
+<a name="14114338"></a>
+<div id="answer-14114338" class="answer" data-answerid="14114338" >
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+    <input type="hidden" value="14114338">
+    <a class="vote-up-off" title="This answer is useful">up vote</a>
+    <span class="vote-count-post ">3</span>
+    <a class="vote-down-off" title="This answer is not useful">down vote</a>
+    
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text"><p>change </p>
+
+<pre><code>Listen 80 
+</code></pre>
+
+<p>to </p>
+
+<pre><code>Listen 127.0.0.1:80 
+</code></pre>
+
+<p>in your httpd.conf file. it will bind apache to specific IP and port. </p>
+</div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+
+
+
+
+
+
+
+
+
+<div class="post-menu"><a href="/a/14114338" title="short permalink to this answer" class="short-link" id="link-post-14114338">share</a><span class="lsep">|</span><a href="/posts/14114338/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    
+
+    <div class="user-info ">
+        <div class="user-action-time">
+                                        answered <span title="2013-01-01 21:20:52Z" class="relativetime">Jan 1 at 21:20</span>
+        </div>
+        <div class="user-gravatar32">
+            <a href="/users/1579939/netsmertia"><div class=""><img src="http://www.gravatar.com/avatar/8529d416ed7ef60b7027d11b1e0ed22f?s=32&d=identicon&r=PG" alt="" width="32" height="32"></div></a>
+        </div>
+        <div class="user-details">
+            <a href="/users/1579939/netsmertia">netsmertia</a><br>
+            <span class="reputation-score" title="reputation score" dir="ltr">185</span><span title="9 bronze badges"><span class="badge3"></span><span class="badgecount">9</span></span>
+        </div>
+    </div>
+
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+
+
+
+<tr>
+<td class="votecell"></td>
+<td>
+    <div id="comments-14114338" class="comments dno">
+        <table>
+        <tbody>
+        
+            <tr><td></td><td></td></tr>
+        
+        </tbody>
+    
+        </table>
+    </div>
+    
+</td>
+</tr>
+    </table>
+</div>
+
+  
+<a name="15688657"></a>
+<div id="answer-15688657" class="answer" data-answerid="15688657" >
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+    <input type="hidden" value="15688657">
+    <a class="vote-up-off" title="This answer is useful">up vote</a>
+    <span class="vote-count-post ">2</span>
+    <a class="vote-down-off" title="This answer is not useful">down vote</a>
+    
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text"><p>I had commented out the ::1 line in my hosts file.</p>
+</div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+
+
+
+
+
+
+
+
+
+<div class="post-menu"><a href="/a/15688657" title="short permalink to this answer" class="short-link" id="link-post-15688657">share</a><span class="lsep">|</span><a href="/posts/15688657/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    
+
+    <div class="user-info ">
+        <div class="user-action-time">
+                                        answered <span title="2013-03-28 17:43:53Z" class="relativetime">Mar 28 at 17:43</span>
+        </div>
+        <div class="user-gravatar32">
+            <a href="/users/728345/obesechicken13"><div class=""><img src="http://www.gravatar.com/avatar/8f7d217f56d38e468c5300e3d8336b48?s=32&d=identicon&r=PG" alt="" width="32" height="32"></div></a>
+        </div>
+        <div class="user-details">
+            <a href="/users/728345/obesechicken13">obesechicken13</a><br>
+            <span class="reputation-score" title="reputation score" dir="ltr">85</span><span title="1 silver badge"><span class="badge2"></span><span class="badgecount">1</span></span><span title="8 bronze badges"><span class="badge3"></span><span class="badgecount">8</span></span>
+        </div>
+    </div>
+
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+
+
+
+<tr>
+<td class="votecell"></td>
+<td>
+    <div id="comments-15688657" class="comments dno">
+        <table>
+        <tbody>
+        
+            <tr><td></td><td></td></tr>
+        
+        </tbody>
+    
+        </table>
+    </div>
+    
+</td>
+</tr>
+    </table>
+</div>
+
+  
+<a name="13405288"></a>
+<div id="answer-13405288" class="answer" data-answerid="13405288" >
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+    <input type="hidden" value="13405288">
+    <a class="vote-up-off" title="This answer is useful">up vote</a>
+    <span class="vote-count-post ">1</span>
+    <a class="vote-down-off" title="This answer is not useful">down vote</a>
+    
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text"><p>I wanted to run my server online and not under localhost or 127.0.0.1 and had the forbidden message. I running the WAMP 2.2 server (<a href="http://en.wikipedia.org/wiki/Apache_HTTP_Server" rel="nofollow">Apache</a> 2.4.2 / <a href="http://en.wikipedia.org/wiki/PHP" rel="nofollow">PHP</a> 5.4.3 / <a href="http://en.wikipedia.org/wiki/MySQL" rel="nofollow">MySQL</a> 5.5.24) on Windows 7 64 bit. What worked for me is the following.</p>
+
+<ol>
+<li>Press the startup WAMP icon in the menu</li>
+<li>Choose Apache folder</li>
+<li>Choose the file <code>httpd.conf</code></li>
+<li>Under the Directory tab section (section with "# Online --> Require all granted" text), I had the "Require local" option which I changed to "Require all granted"</li>
+<li>Restart all services of the WAMP</li>
+</ol>
+
+<p>Again, it worked for me and from this thread I understand that there are many cases in which you may get the discussed message so if mine does not work, try other solutions.</p>
+
+<p>Good luck.</p>
+
+<p>(I hope it helps someone like it helped me. I did not find any one of the solutions above working for me.)</p>
+</div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+
+
+
+
+
+
+
+
+
+<div class="post-menu"><a href="/a/13405288" title="short permalink to this answer" class="short-link" id="link-post-13405288">share</a><span class="lsep">|</span><a href="/posts/13405288/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+
+
+    <div class="user-info user-hover">
+        <div class="user-action-time">
+                            <a href="/posts/13405288/revisions" title="show all edits to this post">edited <span title="2012-11-29 09:07:18Z" class="relativetime">Nov 29 '12 at 9:07</span></a>
+
+        </div>
+        <div class="user-gravatar32">
+            <a href="/users/63550/peter-mortensen"><div class=""><img src="http://www.gravatar.com/avatar/78a0a4bb106d07b6c6f33a51988155e3?s=32&d=identicon&r=PG" alt="" width="32" height="32"></div></a>
+        </div>
+        <div class="user-details">
+            <a href="/users/63550/peter-mortensen">Peter Mortensen</a><br>
+            <span class="reputation-score" title="reputation score" dir="ltr">6,140</span><span title="7 gold badges"><span class="badge1"></span><span class="badgecount">7</span></span><span title="39 silver badges"><span class="badge2"></span><span class="badgecount">39</span></span><span title="70 bronze badges"><span class="badge3"></span><span class="badgecount">70</span></span>
+        </div>
+    </div>
+    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    
+
+    <div class="user-info ">
+        <div class="user-action-time">
+                                        answered <span title="2012-11-15 20:06:27Z" class="relativetime">Nov 15 '12 at 20:06</span>
+        </div>
+        <div class="user-gravatar32">
+            <a href="/users/1355410/michael-liberman"><div class=""><img src="http://www.gravatar.com/avatar/b7513586775a15c1a4118f4a21794c50?s=32&d=identicon&r=PG" alt="" width="32" height="32"></div></a>
+        </div>
+        <div class="user-details">
+            <a href="/users/1355410/michael-liberman">Michael Liberman</a><br>
+            <span class="reputation-score" title="reputation score" dir="ltr">321</span><span title="1 silver badge"><span class="badge2"></span><span class="badgecount">1</span></span><span title="9 bronze badges"><span class="badge3"></span><span class="badgecount">9</span></span>
+        </div>
+    </div>
+
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+
+
+
+<tr>
+<td class="votecell"></td>
+<td>
+    <div id="comments-13405288" class="comments dno">
+        <table>
+        <tbody>
+        
+            <tr><td></td><td></td></tr>
+        
+        </tbody>
+    
+        </table>
+    </div>
+    
+</td>
+</tr>
+    </table>
+</div>
+
+  
+<a name="15205052"></a>
+<div id="answer-15205052" class="answer" data-answerid="15205052" >
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+    <input type="hidden" value="15205052">
+    <a class="vote-up-off" title="This answer is useful">up vote</a>
+    <span class="vote-count-post ">1</span>
+    <a class="vote-down-off" title="This answer is not useful">down vote</a>
+    
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text"><p>For Apache 2.4.2 the solution is: 
+in httpd.conf on line 265 change Require none to Require all granted.
+That's all.</p>
+</div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+
+
+
+
+
+
+
+
+
+<div class="post-menu"><a href="/a/15205052" title="short permalink to this answer" class="short-link" id="link-post-15205052">share</a><span class="lsep">|</span><a href="/posts/15205052/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    
+
+    <div class="user-info ">
+        <div class="user-action-time">
+                                        answered <span title="2013-03-04 15:27:55Z" class="relativetime">Mar 4 at 15:27</span>
+        </div>
+        <div class="user-gravatar32">
+            <a href="/users/1878786/ilce-mkd"><div class=""><img src="http://www.gravatar.com/avatar/6dbaf7383957bf982553650b7bca72b7?s=32&d=identicon&r=PG" alt="" width="32" height="32"></div></a>
+        </div>
+        <div class="user-details">
+            <a href="/users/1878786/ilce-mkd">Ilce MKD</a><br>
+            <span class="reputation-score" title="reputation score" dir="ltr">80</span><span title="5 bronze badges"><span class="badge3"></span><span class="badgecount">5</span></span>
+        </div>
+    </div>
+
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+
+
+
+<tr>
+<td class="votecell"></td>
+<td>
+    <div id="comments-15205052" class="comments dno">
+        <table>
+        <tbody>
+        
+            <tr><td></td><td></td></tr>
+        
+        </tbody>
+    
+        </table>
+    </div>
+    
+</td>
+</tr>
+    </table>
+</div>
+
+  
+<a name="16166170"></a>
+<div id="answer-16166170" class="answer" data-answerid="16166170" >
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+    <input type="hidden" value="16166170">
+    <a class="vote-up-off" title="This answer is useful">up vote</a>
+    <span class="vote-count-post ">0</span>
+    <a class="vote-down-off" title="This answer is not useful">down vote</a>
+    
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text"><p>In my case, the problem was that the phpmyadmin version was specified wrongly in phpmyadmin.conf file. You may check that: </p>
+
+<ol>
+<li><p>go to wamp/apps/<strong>phpmyadmin3.x.x</strong>: notice the file name - what version you are currently using? </p></li>
+<li><p>open file wamp/alias/phpmyadmin.conf: </p>
+
+<p>
+    Options Indexes FollowSymLinks MultiViews
+    AllowOverride all
+        Order Deny,Allow
+        Allow from all
+</p></li>
+</ol>
+
+<p>Check the first line (Directory "c:/wamp/apps/phpmyadmin3.x.x/"), is the file name exactly the same as your actual file name?  </p>
+
+<p>make sure the directory file name is absolutely correct.</p>
+</div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+
+
+
+
+
+
+
+
+
+<div class="post-menu"><a href="/a/16166170" title="short permalink to this answer" class="short-link" id="link-post-16166170">share</a><span class="lsep">|</span><a href="/posts/16166170/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+
+
+    <div class="user-info ">
+        <div class="user-action-time">
+                            <a href="/posts/16166170/revisions" title="show all edits to this post">edited <span title="2013-04-23 09:54:30Z" class="relativetime">Apr 23 at 9:54</span></a>
+
+        </div>
+        <div class="user-gravatar32">
+            
+        </div>
+        <div class="user-details">
+            <br>
+            
+        </div>
+    </div>
+    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    
+
+    <div class="user-info ">
+        <div class="user-action-time">
+                                        answered <span title="2013-04-23 09:48:13Z" class="relativetime">Apr 23 at 9:48</span>
+        </div>
+        <div class="user-gravatar32">
+            <a href="/users/1431065/the-summer-bee"><div class="gravatar-wrapper-32"><img src="http://i.stack.imgur.com/S0feX.jpg?s=32&g=1" alt=""></div></a>
+        </div>
+        <div class="user-details">
+            <a href="/users/1431065/the-summer-bee">the_summer_bee</a><br>
+            <span class="reputation-score" title="reputation score" dir="ltr">60</span><span title="6 bronze badges"><span class="badge3"></span><span class="badgecount">6</span></span>
+        </div>
+    </div>
+
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+
+
+
+<tr>
+<td class="votecell"></td>
+<td>
+    <div id="comments-16166170" class="comments">
+        <table>
+        <tbody>
+                    
+    <tr id="comment-23104022" class="comment">
+        <td></td>
+        <td class="comment-text"><div><span class="comment-copy">no I have a question, &lt;Directory &quot;c:/wamp/apps/phpmyadmin3.4.5/&quot;&gt;&lt;/Directory&gt; cannot be shown here in this post? :P</span> &ndash;&nbsp;<a href="/users/1431065/the-summer-bee" title="60 reputation" class="comment-user">the_summer_bee</a> <span class="comment-date" dir="ltr"><span title="2013-04-23 09:58:51Z" class="relativetime-clean">Apr 23 at 9:58</span></span></div></td>
+    </tr>
+
+        </tbody>
+    
+        </table>
+    </div>
+    
+</td>
+</tr>
+    </table>
+</div>
+
+  
+<a name="16173400"></a>
+<div id="answer-16173400" class="answer" data-answerid="16173400" >
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+    <input type="hidden" value="16173400">
+    <a class="vote-up-off" title="This answer is useful">up vote</a>
+    <span class="vote-count-post ">0</span>
+    <a class="vote-down-off" title="This answer is not useful">down vote</a>
+    
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text"><p>I tried to set up my password.... and that's how I got locked out from localhost. They should fix this...........
+Anyway, be careful with random advice. They all may or may not work. But some advice will lock you out even further... 
+The one that worked for me:
+Type "<code>http://127.0.0.1/phpmyadmin/</code>" in the address bar. 
+Then I discovered that <code>http://localhost/phpmyadmin/</code> also works. 
+However, before that, out of desperation I had... 
+I deleted the files, I uninstalled wamp, deleted temporary cookies, and installed wamp again. It still doesn't accept "localhost" (and I am tired after a day trying to access wamp), but the 127.0.0.1 and the localhost/phpmy... work. I am happy to see the page back. And start working again. 
+If you read this thread all the way to here means you are probably in big problem... 
+Windows 8, Wamp (wampserver 2.2). I wonder what it needs to get back access to localhost. </p>
+</div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+
+
+
+
+
+
+
+
+
+<div class="post-menu"><a href="/a/16173400" title="short permalink to this answer" class="short-link" id="link-post-16173400">share</a><span class="lsep">|</span><a href="/posts/16173400/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    
+
+    <div class="user-info ">
+        <div class="user-action-time">
+                                        answered <span title="2013-04-23 15:30:17Z" class="relativetime">Apr 23 at 15:30</span>
+        </div>
+        <div class="user-gravatar32">
+            <a href="/users/2060451/user2060451"><div class=""><img src="http://www.gravatar.com/avatar/75a64b8257717142d7e3351e1a5ad5af?s=32&d=identicon&r=PG" alt="" width="32" height="32"></div></a>
+        </div>
+        <div class="user-details">
+            <a href="/users/2060451/user2060451">user2060451</a><br>
+            <span class="reputation-score" title="reputation score" dir="ltr">19</span><span title="6 bronze badges"><span class="badge3"></span><span class="badgecount">6</span></span>
+        </div>
+    </div>
+
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+
+
+
+<tr>
+<td class="votecell"></td>
+<td>
+    <div id="comments-16173400" class="comments dno">
+        <table>
+        <tbody>
+        
+            <tr><td></td><td></td></tr>
+        
+        </tbody>
+    
+        </table>
+    </div>
+    
+</td>
+</tr>
+    </table>
+</div>
+
+  
+<a name="16806586"></a>
+<div id="answer-16806586" class="answer" data-answerid="16806586" >
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+    <input type="hidden" value="16806586">
+    <a class="vote-up-off" title="This answer is useful">up vote</a>
+    <span class="vote-count-post ">0</span>
+    <a class="vote-down-off" title="This answer is not useful">down vote</a>
+    
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text"><p>Follow below steps mentioned, it will help you out
+<a href="http://www.ultechspot.com/windows-8/wamp-says-forbidden-you-dont-have-permission-access-phpmyadmin-server-windows-7-or-8" rel="nofollow">http://www.ultechspot.com/windows-8/wamp-says-forbidden-you-dont-have-permission-access-phpmyadmin-server-windows-7-or-8</a></p>
+</div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+
+
+
+
+
+
+
+
+
+<div class="post-menu"><a href="/a/16806586" title="short permalink to this answer" class="short-link" id="link-post-16806586">share</a><span class="lsep">|</span><a href="/posts/16806586/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    
+
+    <div class="user-info ">
+        <div class="user-action-time">
+                                        answered <span title="2013-05-29 06:04:18Z" class="relativetime">May 29 at 6:04</span>
+        </div>
+        <div class="user-gravatar32">
+            <a href="/users/1200323/umesh-patil"><div class=""><img src="http://www.gravatar.com/avatar/29bfaac9dab65325de0fae01ff97666b?s=32&d=identicon&r=PG" alt="" width="32" height="32"></div></a>
+        </div>
+        <div class="user-details">
+            <a href="/users/1200323/umesh-patil">Umesh Patil</a><br>
+            <span class="reputation-score" title="reputation score" dir="ltr">1</span><span title="1 bronze badge"><span class="badge3"></span><span class="badgecount">1</span></span>
+        </div>
+    </div>
+
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+
+
+
+<tr>
+<td class="votecell"></td>
+<td>
+    <div id="comments-16806586" class="comments dno">
+        <table>
+        <tbody>
+        
+            <tr><td></td><td></td></tr>
+        
+        </tbody>
+    
+        </table>
+    </div>
+    
+</td>
+</tr>
+    </table>
+</div>
+
+  
+<a name="16849101"></a>
+<div id="answer-16849101" class="answer" data-answerid="16849101" >
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+    <input type="hidden" value="16849101">
+    <a class="vote-up-off" title="This answer is useful">up vote</a>
+    <span class="vote-count-post ">0</span>
+    <a class="vote-down-off" title="This answer is not useful">down vote</a>
+    
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text"><p>For Apache 2.4.2:</p>
+
+<p>In httpd.conf:</p>
+
+<p>Change</p>
+
+<pre><code>Require local
+</code></pre>
+
+<p>to</p>
+
+<pre><code>Require all granted
+</code></pre>
+</div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+
+
+
+
+
+
+
+
+
+<div class="post-menu"><a href="/a/16849101" title="short permalink to this answer" class="short-link" id="link-post-16849101">share</a><span class="lsep">|</span><a href="/posts/16849101/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    
+
+    <div class="user-info ">
+        <div class="user-action-time">
+                                        answered <span title="2013-05-31 03:00:56Z" class="relativetime">May 31 at 3:00</span>
+        </div>
+        <div class="user-gravatar32">
+            <a href="/users/1136850/sprince"><div class=""><img src="http://www.gravatar.com/avatar/b7459c579f89ab9a4d2186ee31ff1013?s=32&d=identicon&r=PG" alt="" width="32" height="32"></div></a>
+        </div>
+        <div class="user-details">
+            <a href="/users/1136850/sprince">SPrince</a><br>
+            <span class="reputation-score" title="reputation score" dir="ltr">116</span><span title="1 silver badge"><span class="badge2"></span><span class="badgecount">1</span></span><span title="8 bronze badges"><span class="badge3"></span><span class="badgecount">8</span></span>
+        </div>
+    </div>
+
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+
+
+
+<tr>
+<td class="votecell"></td>
+<td>
+    <div id="comments-16849101" class="comments dno">
+        <table>
+        <tbody>
+        
+            <tr><td></td><td></td></tr>
+        
+        </tbody>
+    
+        </table>
+    </div>
+    
+</td>
+</tr>
+    </table>
+</div>
+    <a name='new-answer'></a>
+    <form id="post-form" action="/questions/8366976/answer/submit" method="post"  class="post-form">
+        <input type="hidden" id="post-id" value="8366976" />
+        <h2 class="space">Your Answer</h2>
+
+
+
+    
+<script type="text/javascript">
+    StackExchange.ready(function() {
+        initTagRenderer("".split(" "), "".split(" "));
+         
+        prepareEditor({
+            heartbeatType: 'answer',
+            bindNavPrevention: true,
+            postfix: "",
+            onDemand: true,
+            discardSelector: ".discard-answer"
+            ,immediatelyShowMarkdownHelp:true
+        });
+        
+
+    });  
+</script>
+
+
+<div id="post-editor" class="post-editor">
+
+    <div style="position: relative;">     
+        <div class="wmd-container">
+            <div id="wmd-button-bar" class="wmd-button-bar"></div>
+            <textarea id="wmd-input" class="wmd-input" name="post-text" cols="92" rows="15" tabindex="101" data-min-length=""></textarea>
+        </div>
+    </div>
+
+    <div class="fl" style="margin-top: 8px; height:24px;">&nbsp;</div>
+    <div id="draft-saved" class="draft-saved community-option fl" style="margin-top: 8px; height:24px; display:none;">draft saved</div>
+
+    <div id="draft-discarded" class="draft-discarded community-option fl" style="margin-top: 8px; height:24px; display:none;">draft discarded</div>
+
+
+
+    <div id="wmd-preview" class="wmd-preview"></div>
+    <div></div>
+    <div class="edit-block">
+        <input id="fkey" name="fkey" type="hidden" value="76b490ff73ec8226155e088b8d0270c2">
+        <input id="author" name="author" type="text">
+    </div>
+</div>
+        <div style="position: relative;"> 
+            <div class="form-item dno new-post-login">
+        
+                <div class="new-login-form">
+                    <div class="new-login-left">
+                        <h3>Sign up or <a id="login-link" href="/users/login?returnurl=%2fquestions%2f8366976%2fwamp-error-forbidden-you-dont-have-permission-to-access-phpmyadmin-on-this-s%23new-answer">log in</a></h3>
+                        <script type="text/javascript">
+                            StackExchange.ready(function () {
+                                StackExchange.helpers.onClickDraftSave('#login-link');
+                            });
+                        </script>
+                        <div class="preferred-login google-login">
+                            <p><span class="icon"></span><span>Sign up using Google</span></p>
+                        </div>
+                        <div class="preferred-login facebook-login">
+                            <p><span class="icon"></span><span>Sign up using Facebook</span></p>
+                        </div>
+                        <div class="preferred-login stackexchange-login">
+                            <p><span class="icon"></span><span>Sign up using Stack Exchange</span></p>
+                        </div>
+                    </div>
+                    <input type="hidden" name="manual-openid" class="manual-openid" />
+                    <input type="hidden" name="use-facebook" class="use-facebook" value="false" />
+                    <input type="button" class="submit-openid" value="Submit" style="display:none" />
+                    <div class="new-login-right">
+                                <h3>Post as a guest</h3>
+    <div class="form-item">
+        <table>
+        <tr>
+                    <script type="text/javascript">
+                StackExchange.ready(function () {
+                    StackExchange.helpers.bindHelpOverlayEvents($('.vm input'));
+                });
+            </script>
+            <td class="vm">
+                <div>
+                    <label for="display-name">Name</label>
+                    <input id="display-name" name="display-name" type="text" size="30" maxlength="30" value="" tabindex="105">
+                </div>
+                <div>
+                    <label for="m-address">Email</label>
+                    <input id="m-address" name="m-address" type="text" size="30" maxlength="100" value="" tabindex="106">
+                    <span class="edit-field-overlay">required, but not shown</span>
+                </div>
+            </td>
+        </tr>
+        </table>
+    </div>
+
+                    </div>
+                </div>
+            </div>
+            <script type="text/javascript">
+                StackExchange.ready(
+                    function () {
+                        StackExchange.openid.initPostLogin('.new-post-login', '%2fquestions%2f8366976%2fwamp-error-forbidden-you-dont-have-permission-to-access-phpmyadmin-on-this-s%23new-answer');
+                    }
+                );
+            </script>
+            <noscript>
+                        <h3>Post as a guest</h3>
+    <div class="form-item">
+        <table>
+        <tr>
+                    <script type="text/javascript">
+                StackExchange.ready(function () {
+                    StackExchange.helpers.bindHelpOverlayEvents($('.vm input'));
+                });
+            </script>
+            <td class="vm">
+                <div>
+                    <label for="display-name">Name</label>
+                    <input id="display-name" name="display-name" type="text" size="30" maxlength="30" value="" tabindex="105">
+                </div>
+                <div>
+                    <label for="m-address">Email</label>
+                    <input id="m-address" name="m-address" type="text" size="30" maxlength="100" value="" tabindex="106">
+                    <span class="edit-field-overlay">required, but not shown</span>
+                </div>
+            </td>
+        </tr>
+        </table>
+    </div>
+
+            </noscript>
+        </div>
+           
+            <div class="form-submit cbt">
+            <input id="submit-button" type="submit" value="Post Your Answer" tabindex="110">
+            <a href="#" class="discard-answer dno">discard</a>
+    <p class="privacy-policy-agreement">
+        By posting your answer, you agree to the 
+        <a href="http://stackexchange.com/legal/privacy-policy" target="_blank">privacy policy</a> and 
+        <a href="http://stackexchange.com/legal/terms-of-service" target="_blank">terms of service</a>.
+    </p>
+    <input type="hidden" name="legalLinksShown" value="1" />
+        </div>
+    </form>
+
+
+
+        <h2 class="bottom-notice">
+                Not the answer you're looking for? 
+            Browse other questions tagged <a href="/questions/tagged/permissions" class="post-tag" title="show questions tagged 'permissions'" rel="tag">permissions</a> <a href="/questions/tagged/wamp" class="post-tag" title="show questions tagged 'wamp'" rel="tag">wamp</a> 
+                or <a href="/questions/ask">ask your own question</a>.
+        </h2>
+</div>
+</div>
+<div id="sidebar" class="show-votes">
+        <div class="module question-stats">
+        <p class="label-key">tagged</p>
+        <div class="tagged"><a href="/questions/tagged/permissions" class="post-tag" title="show questions tagged 'permissions'" rel="tag">permissions</a>&nbsp;<span class="item-multiplier"><span class="item-multiplier-x">&times;</span>&nbsp;<span class="item-multiplier-count">5192</span></span><br>
+<a href="/questions/tagged/wamp" class="post-tag" title="show questions tagged 'wamp'" rel="tag">wamp</a>&nbsp;<span class="item-multiplier"><span class="item-multiplier-x">&times;</span>&nbsp;<span class="item-multiplier-count">1631</span></span><br>
+</div>
+        <table id="qinfo">
+            <tr>
+                <td><p class="label-key">asked</p></td>
+                <td style="padding-left:10px"><p class="label-key" title="2011-12-03 10:15:21Z"><b>1 year ago</b></p></td>
+            </tr>
+            <tr>
+                <td><p class="label-key">viewed</p></td>
+
+                <td style="padding-left:10px">
+                    <p class="label-key">
+                        <b>213416 times</b>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td><p class="label-key">active</p></td>
+                <td style="padding-left:10px"><p class="label-key"><b><a href="?lastactivity" class="lastactivity-link" title="2013-05-31 03:00:56Z">6 days ago</a></b></p></td>
+            </tr>
+        </table>
+    </div>
+    
+<div class="module community-bulletin" data-tracker="cb=1">
+    <h4>Community Bulletin</h4>
+    <div class="related">
+        <div class="spacer">
+            <div class="bulletin-item-type event-date">event</div>
+            <div class="bulletin-item-content">
+                <a href="http://apptivate.ms" class="question-hyperlink" target="_blank">Only a few days left to port your app to Windows 8 and win prizes with Apptiv&hellip;</a> <span class="event-date" style="white-space: nowrap;">&ndash; now through June 7</span>
+            </div>
+            <br class="cbt" />
+        </div>
+
+    </div>
+</div>    
+                    <script type="text/javascript">
+                    var scriptSrc = "http://engine.adzerk.net/z/8277/adzerk1_2_4_43,adzerk2_2_17_45,adzerk3_2_4_44?keywords=permissions,wamp";
+                    if (document.referrer) {
+                        if (/\?/.test(scriptSrc))
+                            scriptSrc += "&";
+                        else
+                            scriptSrc += "?";
+                        scriptSrc += "xReferrer=" + document.referrer;
+                    }
+                    StackExchange.ready(function() {
+                        var z = document.createElement("script");
+                        z.type = "text/javascript";
+                        z.async = "true";
+                        z.src = scriptSrc;
+                        var s = document.getElementsByTagName("script")[0];
+                        s.parentNode.insertBefore(z, s);
+                    });
+                </script>
+            <div class="everyonelovesstackoverflow" id="adzerk2">
+            </div>
+    <div id="hireme">
+        <script type="text/javascript">
+            window.careers_adurl="http://careers.stackoverflow.com/gethired/js",window.careers_cssurl="//cdn-careers.sstatic.net/careers/gethired/sidebar.min.css?v=7ae83073b37e",window.careers_leaderboardcssurl="//cdn-careers.sstatic.net/careers/gethired/ninja.min.css?v=78ccbfa5c59f",window.careers_companycssurl="//cdn-careers.sstatic.net/careers/gethired/company",window.careers_adselector="div.hireme, div#hireme",StackExchange.ready(function(){$.ajax({url:"//cdn-careers.sstatic.net/careers/gethired/loader.min.js?v=607ab2dda910",dataType:"script",cache:!0})})
+        </script>
+    </div>
+
+
+
+      
+    
+    <div class="module sidebar-linked">
+        <h4 id="h-linked">Linked</h4>
+        <div class="linked" data-tracker="lq=1">
+            <div class="spacer">
+<a href="/q/10600795" title="Vote score (upvotes - downvotes)">
+        <div class="answer-votes answered-accepted default">4</div>
+</a>
+<a href="/questions/10600795/wamp-server-error-forbidden-you-dont-have-permission-to-access-phpmyadmin-on" class="question-hyperlink">WAMP Server ERROR &ldquo;Forbidden You don&#39;t have permission to access /phpmyadmin/ on this server.&rdquo;</a>
+</div>
+<div class="spacer">
+<a href="/q/10566490" title="Vote score (upvotes - downvotes)">
+        <div class="answer-votes answered-accepted default">2</div>
+</a>
+<a href="/questions/10566490/wamp-server-forbidden" class="question-hyperlink">Wamp server Forbidden</a>
+</div>
+<div class="spacer">
+<a href="/q/13190846" title="Vote score (upvotes - downvotes)">
+        <div class="answer-votes answered-accepted default">1</div>
+</a>
+<a href="/questions/13190846/fancybox-the-requested-content-cannot-be-loaded" class="question-hyperlink">Fancybox - &ldquo;The requested content cannot be loaded.&rdquo;</a>
+</div>
+<div class="spacer">
+<a href="/q/9964280" title="Vote score (upvotes - downvotes)">
+        <div class="answer-votes default">-4</div>
+</a>
+<a href="/questions/9964280/wamp-server-not-running-in-vista" class="question-hyperlink">wamp server not running in vista</a>
+</div>
+<div class="spacer">
+<a href="/q/15135056" title="Vote score (upvotes - downvotes)">
+        <div class="answer-votes default">0</div>
+</a>
+<a href="/questions/15135056/wamp-not-displaying-my-files" class="question-hyperlink">WAMP not displaying my files</a>
+</div>
+<div class="spacer">
+<a href="/q/14563771" title="Vote score (upvotes - downvotes)">
+        <div class="answer-votes default">0</div>
+</a>
+<a href="/questions/14563771/wampserver-root-privileges-error" class="question-hyperlink">Wampserver root privileges error</a>
+</div>
+<div class="spacer">
+<a href="/q/16600009" title="Vote score (upvotes - downvotes)">
+        <div class="answer-votes default">0</div>
+</a>
+<a href="/questions/16600009/cant-modify-data-in-database-with-wamp" class="question-hyperlink">Cant modify data in database with wamp</a>
+</div>
+
+        </div>
+    </div>
+    <div class="module sidebar-related">
+        <h4 id="h-related">Related</h4>
+        <div class="related" data-tracker="rq=1">
+            <div class="spacer">
+<a href="/q/6294923" title="Vote score (upvotes - downvotes)">
+        <div class="answer-votes answered-accepted default">0</div>
+</a>
+<a href="/questions/6294923/weird-403-forbidden-you-dont-have-permission-to-access-on-this-server" class="question-hyperlink">Weird 403 Forbidden: You don&#39;t have permission to access /&lt; on this server</a>
+</div>
+<div class="spacer">
+<a href="/q/10566490" title="Vote score (upvotes - downvotes)">
+        <div class="answer-votes answered-accepted default">2</div>
+</a>
+<a href="/questions/10566490/wamp-server-forbidden" class="question-hyperlink">Wamp server Forbidden</a>
+</div>
+<div class="spacer">
+<a href="/q/10600795" title="Vote score (upvotes - downvotes)">
+        <div class="answer-votes answered-accepted default">4</div>
+</a>
+<a href="/questions/10600795/wamp-server-error-forbidden-you-dont-have-permission-to-access-phpmyadmin-on" class="question-hyperlink">WAMP Server ERROR &ldquo;Forbidden You don&#39;t have permission to access /phpmyadmin/ on this server.&rdquo;</a>
+</div>
+<div class="spacer">
+<a href="/q/12508349" title="Vote score (upvotes - downvotes)">
+        <div class="answer-votes default">0</div>
+</a>
+<a href="/questions/12508349/wamp-error-forbidden-you-dont-have-permission-to-access-url-on-this-server" class="question-hyperlink">WAMP error: forbidden, You don&#39;t have permission to access /url/ on this server</a>
+</div>
+<div class="spacer">
+<a href="/q/12774977" title="Vote score (upvotes - downvotes)">
+        <div class="answer-votes answered-accepted default">1</div>
+</a>
+<a href="/questions/12774977/how-to-recursively-change-folder-permissions-on-wamp-server" class="question-hyperlink">How to recursively change folder permissions on WAMP server</a>
+</div>
+<div class="spacer">
+<a href="/q/14838665" title="Vote score (upvotes - downvotes)">
+        <div class="answer-votes default">0</div>
+</a>
+<a href="/questions/14838665/wamp-directory-forbidden-error" class="question-hyperlink">WAMP Directory Forbidden Error</a>
+</div>
+<div class="spacer">
+<a href="/q/14934468" title="Vote score (upvotes - downvotes)">
+        <div class="answer-votes default">0</div>
+</a>
+<a href="/questions/14934468/cannot-have-permission-to-access-wamp-home-page" class="question-hyperlink">cannot have permission to access wamp home page</a>
+</div>
+<div class="spacer">
+<a href="/q/15413967" title="Vote score (upvotes - downvotes)">
+        <div class="answer-votes answered-accepted default">0</div>
+</a>
+<a href="/questions/15413967/forbidden-error-when-accessing-wamp-from-local-network" class="question-hyperlink">Forbidden error when accessing wamp from local network</a>
+</div>
+<div class="spacer">
+<a href="/q/15969527" title="Vote score (upvotes - downvotes)">
+        <div class="answer-votes default">1</div>
+</a>
+<a href="/questions/15969527/forbidden-you-dont-have-permission-to-access-wp-login-php-on-this-server" class="question-hyperlink">Forbidden You don&#39;t have permission to access /wp-login.php on this server</a>
+</div>
+<div class="spacer">
+<a href="/q/16417995" title="Vote score (upvotes - downvotes)">
+        <div class="answer-votes default">0</div>
+</a>
+<a href="/questions/16417995/forbidden-you-dont-have-permission-to-access-appetitclic-wp-content-themes-apc" class="question-hyperlink">Forbidden You don&#39;t have permission to access /appetitclic/wp-content/themes/Apc/img/logo.png on this server</a>
+</div>
+
+        </div>
+    </div>
+</div>
+
+<div id="feed-link">
+    <div id="feed-link-text"><a href="/feeds/question/8366976" title="feed of this question and its answers"><span class="feed-icon"></span>question feed</a></div>
+</div>
+<script type="text/javascript">
+StackExchange.ready(function(){$.get('/posts/8366976/ivc/f747');});
+</script>
+<noscript>
+    <div><img src="/posts/8366976/ivc/f747" class="dno" alt="" width="0" height="0"></div>
+</noscript><div style="display:none" id="prettify-lang"></div></div>
+
+
+
+        </div>
+    </div>
+    <div id="footer" class="categories">
+        <div class="footerwrap">
+            <div id="footer-menu">
+                <div class="top-footer-links">
+                        <a href="/about">about</a>
+                    <a href="/helpcenter">help</a>
+                        <a href="/badges">badges</a>
+                    <a href="http://blog.stackexchange.com?blb=1">blog</a>
+                        <a href="http://chat.stackoverflow.com">chat</a>
+                    <a href="http://data.stackexchange.com">data</a>
+                    <a href="http://stackexchange.com/legal">legal</a>
+                    <a href="http://stackexchange.com/legal/privacy-policy">privacy policy</a>
+                    <a href="http://stackexchange.com/about/hiring">jobs</a>
+                    <a href="http://engine.adzerk.net/redirect/0/2776/2751/0/4de3c60f719c4dfcb1a57531c7050090/0">advertising info</a>
+
+                    <a onclick='StackExchange.switchMobile("on", "/questions/8366976/wamp-error-forbidden-you-dont-have-permission-to-access-phpmyadmin-on-this-s")'>mobile</a>
+                    <b><a href="/help">contact us</a></b>
+                        <b><a href="http://meta.stackoverflow.com">feedback</a></b>
+                </div>
+                <div id="footer-sites">
+                <table>
+    <tr>
+            <th colspan=3>
+                Technology
+            </th>
+            <th >
+                Life / Arts
+            </th>
+            <th >
+                Culture / Recreation
+            </th>
+            <th >
+                Science
+            </th>
+            <th >
+                Other
+            </th>
+    </tr>
+    <tr>
+            <td>
+                <ol>
+                        <li><a href="http://stackoverflow.com" title="professional and enthusiast programmers">Stack Overflow</a></li>
+                        <li><a href="http://serverfault.com" title="professional system and network administrators">Server Fault</a></li>
+                        <li><a href="http://superuser.com" title="computer enthusiasts and power users">Super User</a></li>
+                        <li><a href="http://webapps.stackexchange.com" title="power users of web applications">Web Applications</a></li>
+                        <li><a href="http://askubuntu.com" title="Ubuntu users and developers">Ask Ubuntu</a></li>
+                        <li><a href="http://webmasters.stackexchange.com" title="pro webmasters">Webmasters</a></li>
+                        <li><a href="http://gamedev.stackexchange.com" title="professional and independent game developers">Game Development</a></li>
+                        <li><a href="http://tex.stackexchange.com" title="users of TeX, LaTeX, ConTeXt, and related typesetting systems">TeX - LaTeX</a></li>
+                            </ol></td><td><ol>
+                        <li><a href="http://programmers.stackexchange.com" title="professional programmers interested in conceptual questions about software development">Programmers</a></li>
+                        <li><a href="http://unix.stackexchange.com" title="users of Linux, FreeBSD and other Un*x-like operating systems.">Unix &amp; Linux</a></li>
+                        <li><a href="http://apple.stackexchange.com" title="power users of Apple hardware and software">Ask Different (Apple)</a></li>
+                        <li><a href="http://wordpress.stackexchange.com" title="WordPress developers and administrators">WordPress Answers</a></li>
+                        <li><a href="http://gis.stackexchange.com" title="cartographers, geographers and GIS professionals">Geographic Information Systems</a></li>
+                        <li><a href="http://electronics.stackexchange.com" title="electronics and electrical engineering professionals, students, and enthusiasts">Electrical Engineering</a></li>
+                        <li><a href="http://android.stackexchange.com" title="enthusiasts and power users of the Android operating system">Android Enthusiasts</a></li>
+                        <li><a href="http://security.stackexchange.com" title="IT security professionals">IT Security</a></li>
+                            </ol></td><td><ol>
+                        <li><a href="http://dba.stackexchange.com" title="database professionals who wish to improve their database skills and learn from others in the community">Database Administrators</a></li>
+                        <li><a href="http://drupal.stackexchange.com" title="Drupal developers and administrators">Drupal Answers</a></li>
+                        <li><a href="http://sharepoint.stackexchange.com" title="SharePoint enthusiasts">SharePoint</a></li>
+                        <li><a href="http://ux.stackexchange.com" title="user experience researchers and experts">User Experience</a></li>
+                        <li><a href="http://mathematica.stackexchange.com" title="users of Mathematica">Mathematica</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#technology" class="more">
+                                more (14)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="http://photo.stackexchange.com" title="professional, enthusiast and amateur photographers">Photography</a></li>
+                        <li><a href="http://scifi.stackexchange.com" title="science fiction and fantasy enthusiasts">Science Fiction &amp; Fantasy</a></li>
+                        <li><a href="http://cooking.stackexchange.com" title="professional and amateur chefs">Seasoned Advice (cooking)</a></li>
+                        <li><a href="http://diy.stackexchange.com" title="contractors and serious DIYers">Home Improvement</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#lifearts" class="more">
+                                more (13)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="http://english.stackexchange.com" title="linguists, etymologists, and serious English language enthusiasts">English Language &amp; Usage</a></li>
+                        <li><a href="http://skeptics.stackexchange.com" title="scientific skepticism">Skeptics</a></li>
+                        <li><a href="http://judaism.stackexchange.com" title="those who base their lives on Jewish law and tradition and anyone interested in learning more">Mi Yodeya (Judaism)</a></li>
+                        <li><a href="http://travel.stackexchange.com" title="road warriors and seasoned travelers">Travel</a></li>
+                        <li><a href="http://christianity.stackexchange.com" title="committed Christians, experts in Christianity and those interested in learning more">Christianity</a></li>
+                        <li><a href="http://gaming.stackexchange.com" title="passionate videogamers on all platforms">Arqade (gaming)</a></li>
+                        <li><a href="http://bicycles.stackexchange.com" title="people who build and repair bicycles, people who train cycling, or commute on bicycles">Bicycles</a></li>
+                        <li><a href="http://rpg.stackexchange.com" title="gamemasters and players of tabletop, paper-and-pencil role-playing games">Role-playing Games</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#culturerecreation" class="more">
+                                more (21)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="http://math.stackexchange.com" title="people studying math at any level and professionals in related fields">Mathematics</a></li>
+                        <li><a href="http://stats.stackexchange.com" title="statisticians, data analysts, data miners and data visualization experts">Cross Validated (stats)</a></li>
+                        <li><a href="http://cstheory.stackexchange.com" title="theoretical computer scientists and researchers in related fields">Theoretical Computer Science</a></li>
+                        <li><a href="http://physics.stackexchange.com" title="active researchers, academics and students of physics">Physics</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#science" class="more">
+                                more (7)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="http://stackapps.com" title="apps, scripts, and development with the Stack Exchange API">Stack Apps</a></li>
+                        <li><a href="http://meta.stackoverflow.com" title="meta-discussion of the Stack Exchange family of Q&amp;A websites">Meta Stack Overflow</a></li>
+                        <li><a href="http://area51.stackexchange.com" title="proposing new sites in the Stack Exchange network">Area 51</a></li>
+                        <li><a href="http://careers.stackoverflow.com">Stack Overflow Careers</a></li>
+                    
+                </ol>
+            </td>
+    </tr>
+</table>
+                </div>
+            </div>
+
+            <div id="copyright">
+                site design / logo &copy; 2013 stack exchange inc; 
+                user contributions licensed under <a href="http://creativecommons.org/licenses/by-sa/3.0/" rel="license">cc-wiki</a> 
+                with <a href="http://blog.stackoverflow.com/2009/06/attribution-required/" rel="license">attribution required</a>
+            </div>
+            <div id="footer-flair">
+                <a href="http://creativecommons.org/licenses/by-sa/3.0/" class="cc-wiki-link"></a>
+            </div>
+            <div id="svnrev">
+                rev 2013.6.5.727
+            </div>
+            
+        </div>
+    </div>
+    <noscript>
+        <div id="noscript-warning">Stack Overflow works best with JavaScript enabled<img src="http://pixel.quantserve.com/pixel/p-c1rF4kxgLUzNc.gif" alt="" class="dno"></div>
+    </noscript>
+    <script type="text/javascript">var _gaq=_gaq||[];_gaq.push(['_setAccount','UA-5620270-1']);
+        _gaq.push(['_setCustomVar', 1, 'tags', '|permissions|wamp|']); 
+_gaq.push(['_trackPageview']);
+    var _qevents = _qevents || [];
+    (function(){
+        var s=document.getElementsByTagName('script')[0];
+        var ga=document.createElement('script');
+        ga.type='text/javascript';
+        ga.async=true;
+        ga.src='http://www.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(ga,s);
+        var sc=document.createElement('script');
+        sc.type='text/javascript';
+        sc.async=true;
+        sc.src='http://edge.quantserve.com/quant.js'; 
+        s.parentNode.insertBefore(sc,s);
+    })();
+    </script>
+    <script type="text/javascript">
+        _qevents.push({ qacct: "p-c1rF4kxgLUzNc" });
+    </script>        
+    
+</body>
+</html>
